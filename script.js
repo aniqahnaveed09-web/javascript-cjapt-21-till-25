@@ -88,11 +88,109 @@
 
 // question 12
 
-var num = 35.36;
-var numAsString = num.toString();
+// var num = 35.36;
+// var numAsString = num.toString();
 
-var result = numAsString.replace(".", "");
-document.write("Number: " + num + "<br>");
-document.write("Result: " + result);
+// var result = numAsString.replace(".", "");
+// document.write("Number: " + num + "<br>");
+// document.write("Result: " + result);
+
+
+// question 13
+//  var userName = prompt("enter your name")
+//  var flag = false
+
+// //  console.log(userName.charCodeAt(0))
+// for (var i = 0 ; i < userName.length ; i++){
+//     var code = userName.charCodeAt(i)
+//     // console.log(userName[i] , code) 
+//     if(code === 33 || code===44 || code===46 || code === 64){
+      
+//         flag = true
+// }
+// }
+// if(flag){
+//     console.log("enter a valid username")
+// } else{
+
+// console.log(userName)
+// }
+
+
+// question 14
+
+// var A = ["cake" , "apple pie" , "cookie" , "chips" , "patties"]
+// var userInput = prompt("welcome to ABC bakery!! what do you want to order sir/mam")
+// var matchFound = false
+// var Index ;
+// for(i=0 ; i<A.length;i++){
+//     if(A[i].toLowerCase() === userInput.toLowerCase()){
+//         matchFound = true
+//         Index = i
+//         break
+//     }
+// }
+// if (matchFound) {
+   
+//     alert(userInput + " is available at index " + Index + " in our bakery.");
+// } else {
+//     alert("We are sorry, " + userInput + " is not available in our bakery.");
+// }
+
+
+
+// question 15 
+
+// var password = prompt("enter your password")
+// var hasNumber = false
+// var hasAlphabet = false
+// for(var i = 0 ; i < password.length ; i++){
+//     var code = password.charCodeAt(i)
+// if(code >= 48 && code<=57){
+//  hasNumber = true
+// } 
+// if((code >= 65 && code<= 90) || (code >= 97 && code<= 122)){
+//  hasAlphabet = true   
+// } 
+ 
+// }
+ 
+// if(hasNumber && hasAlphabet){
+//     alert("valid password")
+// }
+// else{
+//     alert("please enter a valid password")
+// }
+
+// question 16
+
+// var university = "university of Karachi"
+// var letter = university.split("")
+// console.log(letter)
+
+
+// question 17
+
+// var country = prompt("enter your favorite country")
+// var character = country.length
+
+// var lastCharacter = country.charAt(character - 1)
+// document.write ("User input is "  + country + "<br>")
+// document.write ("Last character at of input is " + lastCharacter +"<br>")
+
+// question 18
+
+// var str = "the quick brown fox jumps over the lazy dog"
+// var word = str.toLowerCase().split(" ")
+
+// count = 0
+// for (i =0 ; i < word.length ; i++){
+//     if(word[i]==="the"){
+//         count++
+//     }
+// }
+
+// document.write("the text is :" + str + "<br>")
+// document.write("there are " + count + " time occurence of word 'the' in the string")
 
 
