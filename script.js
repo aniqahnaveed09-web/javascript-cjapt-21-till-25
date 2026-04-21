@@ -141,26 +141,38 @@
 
 // question 15 
 
-// var password = prompt("enter your password")
-// var hasNumber = false
-// var hasAlphabet = false
-// for(var i = 0 ; i < password.length ; i++){
-//     var code = password.charCodeAt(i)
-// if(code >= 48 && code<=57){
-//  hasNumber = true
-// } 
-// if((code >= 65 && code<= 90) || (code >= 97 && code<= 122)){
-//  hasAlphabet = true   
-// } 
+var password = prompt("enter your password")
+var firstIndex = password.charCodeAt(0)
+
+if(password.length < 6){
+    alert("must be 6 character long")
+} else if(firstIndex >= 48 && firstIndex <=57){
+    alert("password shouldn't start with number")
+}else{
+var hasNumber = false
+var hasAlphabet = false
+for(var i = 0 ; i < password.length ; i++){
+    var code = password.charCodeAt(i)
+if(code >= 48 && code<=57){
+ hasNumber = true
+} 
+if((code >= 65 && code<= 90) || (code >= 97 && code<= 122)){
+ hasAlphabet = true   
+} 
  
-// }
+}
  
-// if(hasNumber && hasAlphabet){
-//     alert("valid password")
-// }
-// else{
-//     alert("please enter a valid password")
-// }
+if(hasNumber && hasAlphabet){
+    alert("valid password")
+}
+else{
+    alert("please enter a valid password")
+}
+}
+
+
+
+
 
 // question 16
 
